@@ -80,7 +80,7 @@ section h1 {
     border-top-right-radius: 13px;
 }
 
-#title {
+.title {
     background-color: var(--tertiary-color);
     margin: 0;
     height: 54px;
