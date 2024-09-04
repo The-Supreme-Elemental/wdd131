@@ -1,6 +1,10 @@
 header {
     background-color: purple;
+    font-family: "Roboto", system-ui;
 }
+
 header h1 {
-    color:white
+    color: white;
+    margin: 10px;
+    padding: 10px;
 }
