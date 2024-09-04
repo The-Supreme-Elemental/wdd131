@@ -1,4 +1,5 @@
-header {
+header,
+footer {
     background-color: purple;
     font-family: "Roboto", system-ui;
 }
@@ -10,5 +11,14 @@ header h1 {
 }
 
 main {
-    font-family:  "Roboto", system-ui;
+    font-family: "Roboto", system-ui;
+}
+
+figure {
+    
+}
+
+footer {
+    color: white;
+    text-align: center;
 }
