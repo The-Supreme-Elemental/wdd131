@@ -10,15 +10,13 @@
     .navigation {
         justify-content: flex-end;
         flex-direction: row;
-    }
-
-
-    .navigation li {
         display: flex;
         margin: 5%;
     }
+
+
     
-    .navigation  {
+    .navigation li  {
         text-align: center;
         color: white;
         flex: 1 1 100%;
