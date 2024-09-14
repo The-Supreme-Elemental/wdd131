@@ -2,29 +2,35 @@
     * {
         max-width: 100%;
     }
+
     header {
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
+
     .navigation {
-        justify-content: flex-end;
+        display: flex;
+        /* justify-content: flex-end;
         flex-direction: row;
         display: flex;
-        margin: 5%;
+        margin: 5%; */
     }
 
 
-    
-    .navigation li  {
-        text-align: center;
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+        /* text-align: center;
         color: white;
         flex: 1 1 100%;
-        font-size: xx-large;
+        font-size: xx-large; */
 
     }
-    nav ul {
-    
+
+    .navigation a {
+        text-align: center;
     }
 
     #menu {
@@ -38,4 +44,4 @@
         place-items: center;
         max-width: 1100px;
     }
-}   
+}

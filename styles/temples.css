@@ -40,6 +40,8 @@ header h1 {
     color: white;
     font-weight: 700;
     transition: 0.5s;
+    padding: 10px;
+    font-size: xx-large;
 
 
 }
@@ -58,11 +60,16 @@ header h1 {
     right: 5px;
     top: 0px;
     font-size: 50px;
-
+    
 }
 
 #menu.show::before {
-    content: "(┬┬﹏┬┬)";
+    content: "░";
+    position: absolute;
+    right: 15px;
+    top: 20px;
+    font-size: 40px;
+
 }
 
 .show li {
