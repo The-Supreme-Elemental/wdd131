@@ -45,6 +45,10 @@ header h1 {
 
 
 }
+.navigation a:hover {
+    background-color: rgb(194, 15, 194);
+}
+
 
 #menu {
     display: block;
