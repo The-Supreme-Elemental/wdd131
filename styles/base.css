@@ -20,7 +20,7 @@ header {
     color: #003049;
     font-family: "Titillium Web", sans-serif;
     padding: 0;
-    margin: 0;
+    margin: 0
 
 }
 
@@ -101,10 +101,17 @@ section h1 {
 }
 
 #northern {
-    width: 100px;
+    width: 200px;
     float: left;
     position: relative;
+    margin: 10px;
     /* top: -40px; */
+}
+#pogo {
+    float: right;
+    position: relative;
+    margin: 15px;
+    ;
 }
 
 .web_dev_card {
