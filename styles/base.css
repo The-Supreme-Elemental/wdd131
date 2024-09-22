@@ -65,7 +65,8 @@ main {
     font-family: "Titillium Web", sans-serif;
     display: grid;
     grid-template-columns: 15px 1fr 5px 1fr 15px;
-    grid-template-rows: 15px 1fr 15px
+    grid-template-rows: 15px 1fr 15px;
+    max-width: 100%;
 }
 
 section {
