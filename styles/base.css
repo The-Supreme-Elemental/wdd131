@@ -6,6 +6,10 @@
     --accent2-color: #e7bb41;
 
 }
+* {
+    margin: 0;
+    padding: 0;
+}
 
 body {
     margin: 0;
