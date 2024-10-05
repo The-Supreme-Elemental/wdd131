@@ -1,0 +1,10 @@
+div #bold {
+    font-weight: 700;
+}
+
+main,
+header,
+footer {
+    font-family: "Titillium Web", sans-serif;
+
+}
