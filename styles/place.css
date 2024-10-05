@@ -1,6 +1,15 @@
+:root {
+    --primary-color: #3c1518ff;
+    --secondary-color: #69140eff;
+    --tertiary-color: #a44200ff;
+    --accent1-color: #d58936ff;
+    --accent2-color: #b0fe76ff;
+}
+
 * {
     margin: 0;
     padding: 0;
+    background-color: var(--accent2-color);
 }
 
 div #bold {
@@ -13,3 +22,10 @@ footer {
     font-family: "Titillium Web", sans-serif;
 
 }
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+
