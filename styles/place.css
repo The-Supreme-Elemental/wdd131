@@ -28,4 +28,13 @@ footer {
     height: auto;
 }
 
+header h1 {
+    text-align: center;
+    color: var(--accent1-color);
+    padding: 15px;
+    background-color: var(--secondary-color);
+}
 
+header {
+    padding-bottom: 15px;
+}
