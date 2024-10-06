@@ -47,9 +47,41 @@ div {
 
 div.weather img {
     height: 150px;
+    text-align: center;
 }
 
 .hero img {
     width: 100%;
     height: auto;
+
+}
+.weather img{
+    display: none;
+}
+
+@media screen and (min-width: 500) {
+    main {
+        display: flex;
+    }
+    
+    .data-div {
+        position: relative;
+        width: 300px;
+        height: auto;
+    }
+    .data {
+        
+    }
+    
+    .data {
+        z-index: 10;
+        position: absolute;
+        top: 30%;
+        width: 300px;
+        background-color: var(--accent1-color);
+    }
+
+    .weather img {
+        display: none;
+    }
 }
