@@ -12,14 +12,15 @@
     background-color: var(--accent2-color);
 }
 
-div #bold {
-    font-weight: 700;
+div{
+    text-align: center;
 }
 
 main,
 header,
 footer {
     font-family: "Titillium Web", sans-serif;
+    text-align: center;
 
 }
 
