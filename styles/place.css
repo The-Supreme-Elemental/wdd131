@@ -39,3 +39,7 @@ header h1 {
 header {
     padding-bottom: 15px;
 }
+
+div.weather img {
+    height: 150px;
+}
