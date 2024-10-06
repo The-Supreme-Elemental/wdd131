@@ -12,21 +12,12 @@
     background-color: var(--accent2-color);
 }
 
-div{
-    text-align: center;
-}
-
 main,
 header,
 footer {
     font-family: "Titillium Web", sans-serif;
     text-align: center;
 
-}
-
-.hero img {
-    width: 100%;
-    height: auto;
 }
 
 header h1 {
@@ -36,10 +27,29 @@ header h1 {
     background-color: var(--secondary-color);
 }
 
+footer, footer p, footer span{
+    background-color: var(--secondary-color);
+}
+footer {
+    padding: 15px;
+    color: var(--accent1-color);
+}
+
 header {
     padding-bottom: 15px;
 }
 
+
+div {
+    text-align: center;
+    margin: 20px;
+}
+
 div.weather img {
     height: 150px;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
 }
