@@ -31,9 +31,12 @@ header h1 {
     background-color: var(--secondary-color);
 }
 
-footer, footer p, footer span{
+footer,
+footer p,
+footer span {
     background-color: var(--secondary-color);
 }
+
 footer {
     padding: 15px;
     color: var(--accent1-color);
@@ -58,6 +61,7 @@ div.weather img {
     width: 100%;
     height: auto;
 }
+
 picture {
     padding: 0;
     margin: 0;
@@ -67,7 +71,7 @@ picture {
     /* main {
         display: flex;
     } */
-    
+
 
     .data {
         z-index: 10;
@@ -78,16 +82,26 @@ picture {
         background-color: var(--accent1-color);
         height: 275px;
     }
-    .data h1, .weather h1 {
+
+    .data h1,
+    .weather h1 {
         background-color: var(--tertiary-color);
         position: relative;
         right: 30px;
         padding: 5px;
         text-align: left;
     }
+    .weather h1::after {
+        content: "☀️";
+        position: relative;
+        left: 100px;
+    }
+
     div {
         padding: 10px;
+        box-shadow: 20px 20px 50px black;
     }
+
     .weather {
         position: absolute;
         background-color: var(--accent1-color);
@@ -101,5 +115,5 @@ picture {
         display: none;
     }
 
-    
+
 }
