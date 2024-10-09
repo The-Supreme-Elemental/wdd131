@@ -3,7 +3,7 @@ document.getElementById("current_year").innerHTML = current_year.getFullYear();
 
 let lastModifiedDate = new Date(document.lastModified);
 
-document.getElementById("lastModified").innerHTML = "Last Modified:  " + lastModifiedDate;
+document.getElementById("lastmodified").innerHTML = "Last Modified:  " + lastModifiedDate;
 
 function calcWindChill(airTemp, windSpeed) {
 
