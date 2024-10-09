@@ -8,11 +8,12 @@ document.getElementById("lastModified").innerHTML = "Last Modified:  " + lastMod
 function calcWindChill(airTemp, windSpeed) {
 
     if (airTemp <= 50 && windSpeed > 3) {
-        return 35.74 + (0.6215 * airTemp) - (35.75 * (windSpeed ** 0.16)) + (0.4275 * airTemp * (windSpeed ** 0.16));
+        let windChill = 35.74 + (0.6215 * airTemp) - (35.75 * (windSpeed ** 0.16)) + (0.4275 * airTemp * (windSpeed ** 0.16));
+        return windChill.toFixed() + "°";
     } else {
         return "N/A";
     }
 }
 
-let windChill = calcWindChill(40, 10);
-document.querySelector("windChill").textContent = windChill;
+let windChill = calcWindChill(5, 4);
+document.querySelector("#windchill").textContent = windChill;
