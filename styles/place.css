@@ -94,7 +94,7 @@ picture {
     .weather h1::after {
         content: "☀️";
         position: relative;
-        left: 100px;
+        left: 125px;
     }
 
     div {
