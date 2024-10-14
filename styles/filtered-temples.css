@@ -1,0 +1,109 @@
+* {
+    padding: 0%;
+    margin: 0;
+    max-width: 100%;
+}
+
+
+header,
+footer {
+    background-color: purple;
+    font-family: "Roboto", system-ui;
+}
+
+header h1 {
+    color: white;
+    margin-top: 0px;
+    padding: 20px;
+}
+
+/* nav {
+    background-color: blueviolet;
+} */
+
+.navigation {
+    margin: auto;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.navigation li {
+    display: none;
+}
+
+
+
+.navigation a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    transition: 0.5s;
+    padding: 10px;
+    font-size: xx-large;
+
+
+}
+.navigation a:hover {
+    background-color: rgb(194, 15, 194);
+}
+
+
+#menu {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: white
+}
+
+#menu::before {
+    content: "≡";
+    position: absolute;
+    right: 5px;
+    top: 0px;
+    font-size: 50px;
+    
+}
+
+#menu.show::before {
+    content: "░";
+    position: absolute;
+    right: 15px;
+    top: 20px;
+    font-size: 40px;
+
+}
+
+.show li {
+    display: block;
+}
+
+
+#gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 100%;
+    text-align: center;
+}
+
+main h2 {
+    text-align: center;
+    grid-column: 1/4;
+    margin-top: 30px;
+}
+
+figure {
+    text-align: center;
+    margin: 5%;
+    padding: 0;
+}
+
+footer {
+    color: white;
+    text-align: center;
+}
