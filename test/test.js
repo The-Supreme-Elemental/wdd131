@@ -1,8 +1,10 @@
-const PI = 3.14;
-let area = 0;
-let radius = 0;
-function circleArea(radius) {
-    const area = radius * PI;
-    console.log(area);
-}
-area = circleArea(3);
+const numbers = [3, 7, 2, 8, 5];
+
+const maxNumber = numbers.reduce((acc, num) => {
+    if (num > acc) {
+        acc = num;
+    }
+    return acc;
+}, 0);
+
+console.log(maxNumber)
