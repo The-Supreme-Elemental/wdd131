@@ -1,9 +1,20 @@
+// let d = new Date();
+// document.getElementById("currentYear").innerHTML = `&copy;${d.getFullYear()}`;
+// document.querySelector("#lastModified").textContent = `Last Modification: $(document.lastModified)`;
+
+
 const current_year = new Date();
-document.getElementById("current_year").innerHTML = current_year.getFullYear();
-
+document.getElementById("currentYear").innerHTML = current_year.getFullYear();
 let lastModifiedDate = new Date(document.lastModified);
+document.getElementById("lastModified").textContent = "Last Modified:  " + lastModifiedDate;
 
-document.getElementById("lastmodified").innerHTML = "Last Modified:  " + lastModifiedDate;
+const mainnav = document.querySelector(".navigation")
+const hambutton = document.querySelector("#menu");
+
+hambutton.addEventListener("click", () => {
+    mainnav.classList.toggle("show");
+    hambutton.classList.toggle("show");
+});
 
 
 
@@ -67,16 +78,28 @@ const temples = [
             "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
     },
     {
-        templeName: "Teton River Temple",
-        location: "Rexburg Idaho",
-        dedicated: "2024, July, 1",
-        area: 100000,
+        templeName: "Toronto Ontario",
+        location: "Ontario, Canada",
+        dedicated: "1984, August, 27",
+        area: 57982,
         imageUrl:
-            "https://www.churchofjesuschrist.org/imgs/d789b5c713a611ef8b13eeeeac1eb849771546df/full/320%2C/0/default"
+            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/toronto-ontario/400x250/toronto-temple-lds-235671-wallpaper.jpg"
+
+    },
+    {
+
+        templeName: "Toronto Ontario",
+        location: "Ontario, Canada",
+        dedicated: "1984, August, 27",
+        area: 57982,
+        imageUrl:
+            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/toronto-ontario/400x250/toronto-temple-lds-235671-wallpaper.jpg"
 
     }
     // Add more temple objects here...
 ];
+
+createTempleCard();
 
 function createTempleCard() {
     temples.forEach(temple => {
@@ -109,6 +132,7 @@ function createTempleCard() {
     
     
 }
+
 
 
 
