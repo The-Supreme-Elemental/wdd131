@@ -99,10 +99,11 @@ const temples = [
     // Add more temple objects here...
 ];
 
-createTempleCard();
+createTempleCard(temples);
 
-function createTempleCard() {
-    temples.forEach(temple => {
+function createTempleCard(filteredTemples) {
+    document.querySelector("#gallery").innerHTML = "";
+    filteredTemples.forEach(temple => {
         let card = document.createElement("section");
         let name = document.createElement("h3");
         let place = document.createElement("p");
@@ -125,15 +126,44 @@ function createTempleCard() {
         card.appendChild(sqrArea);
         card.appendChild(img);
 
-        
+
         document.getElementById("gallery").appendChild(card);
-        
+
     })
-    
-    
+
+
 }
 
+const templeLink = document.querySelector("#home");
+templeLink.addEventListener("click", () => {
+    createTempleCard(filteredTemples);
+})
+const oldtempleLink = document.querySelector("#oldtemples");
+oldtempleLink.addEventListener("click", () => {
+    create
+})
+const newtempleLink = document.querySelector("#newtemples");
+newtempleLink.addEventListener("click", () => {
+    createTempleCard(temples.filter(temple => temple.dedicated));
 
 
+})
+const lrgareaLink = document.querySelector("#lrgarea");
+lrgareaLink.addEventListener("click", () => {
+    createTempleCard(temples.filter(temple => temple.area > 90000));
 
+})
+const smlareaLink = document.querySelector("#smlarea");
+smlareaLink.addEventListener("click", () => {
+    createTempleCard(temples.filter(temple => temple.area < 10000));
+
+
+})
+
+const nonutahLink = document.querySelector("#nonutah");
+nonutahLink.addEventListener("click", () => { 
+    createTempleCard(temples.filter(temple => temple.location.includes("Utah")));
+
+
+})
 
