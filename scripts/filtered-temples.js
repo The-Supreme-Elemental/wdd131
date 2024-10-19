@@ -133,18 +133,48 @@ function createTempleCard(filteredTemples) {
 
 
 }
+const oldFilter = (temples, oldFilterDate) => {
+    const filterDate = new Date(oldFilterDate);
+    return temples.filter(temple => {
+        // const filterDate = new Date(temple.dedicated);
+        const [year, month, day] = temple.dedicated.split(", ").map(part => part.trim());
+        const formattedDate = `${year}-${new Date(`${month} 1`).getMonth() + 1}-${day}`;
+        const templeDate = new Date(formattedDate);
+        return templeDate < filterDate;
+
+
+    })
+
+}
+const newFilter = (temples, newFilterDate) => {
+    const filterDate = new Date(newFilterDate);
+    return temples.filter(temple => {
+        // const filterDate = new Date(temple.dedicated);
+        const [year, month, day] = temple.dedicated.split(", ").map(part => part.trim());
+        const formattedDate = `${year}-${new Date(`${month} 1`).getMonth() + 1}-${day}`;
+        const templeDate = new Date(formattedDate);
+        return templeDate > filterDate;
+
+
+    })
+
+}
+
+
 
 const templeLink = document.querySelector("#home");
 templeLink.addEventListener("click", () => {
-    createTempleCard(filteredTemples);
+    createTempleCard(temples);
 })
 const oldtempleLink = document.querySelector("#oldtemples");
 oldtempleLink.addEventListener("click", () => {
-    create
+    const filteredTemples = oldFilter(temples, "1900-01-01");
+    createTempleCard(filteredTemples);
 })
 const newtempleLink = document.querySelector("#newtemples");
 newtempleLink.addEventListener("click", () => {
-    createTempleCard(temples.filter(temple => temple.dedicated));
+    const filteredTemples = newFilter(temples, "2000-01-01");
+    createTempleCard(filteredTemples);
 
 
 })
@@ -161,9 +191,7 @@ smlareaLink.addEventListener("click", () => {
 })
 
 const nonutahLink = document.querySelector("#nonutah");
-nonutahLink.addEventListener("click", () => { 
+nonutahLink.addEventListener("click", () => {
     createTempleCard(temples.filter(temple => temple.location.includes("Utah")));
 
-
-})
-
+});

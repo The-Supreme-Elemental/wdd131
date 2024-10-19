@@ -102,6 +102,7 @@ header h1 {
 
 #gallery img {
     margin-top: 10px;
+    height: 200px;
     box-shadow: 5px 5px 15px black;
 }
 
