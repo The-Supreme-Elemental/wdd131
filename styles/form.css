@@ -1,0 +1,339 @@
+:root {
+    --primary-color: #019824;
+    --secondary-color: #38091d;
+    --tertiary-color: #156064;
+    --background-color: #ccc;
+    --background-color-2: rgb(87, 78, 29) font-family: "Titillium Web", sans-serif;
+    background-color: var(--tertiary-color);
+
+}
+
+/* Fullsize styles */
+@media screen and (min-width: 800px) {
+
+    * {
+        box-sizing: border-box;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .formassg fieldset {
+        margin: 20px 0px;
+        padding: 5px;
+        border: 1px solid;
+        /* text-align: left;
+        align-items: left; */
+        background-color: var(--background-color);
+
+    }
+
+    .formassg select,
+    .formassg input[type="date"],
+    .formassg textarea,
+    .formassg input[type="text"],
+    .formassg input[type="submit"] {
+        display: flex;
+        background-color: var(--secondary-color);
+        color: var(--background-color);
+        font-weight: 700;
+        padding: .65rem;
+        margin-bottom: 15px;
+        /* justify-content: right; */
+    }
+
+    .formassg legend {
+        display: flex;
+        padding: 0 10px;
+        margin: 15px;
+        height: 15px;
+        background-color: var(--background-color);
+        text-align: left;
+    }
+
+    #stars {
+        display: flex;
+        flex-direction: row-reverse; /* Change to row to align stars from left to right */
+        justify-content: flex-end; /* Aligns the stars to the left */
+        /* You can remove the margin: auto or text-align here */
+    }
+    
+    #stars>label::before {
+        content: "\2606"; /* Empty star (★) */
+    }
+    
+    #stars input:checked~label::before {
+        content: "\2605"; /* Filled star (☆) when checked */
+    }
+    
+    #stars label {
+        color: gold;
+        width: 30px;
+        height: 30px;
+        font-size: 2rem;
+        margin-right: 5px; /* Add space between stars if needed */
+        display: flex;
+        align-items: center; /* Center stars vertically */
+        text-align: center; /* Center stars inside the label */
+    }
+    
+    #stars input[type="radio"] {
+        display: none; /* Hide the radio inputs */
+    }
+    
+
+    footer {
+        background-color: var(--primary-color)
+    }
+
+    #checkbox-container {
+        display: flex;
+        text-align: left;
+        margin: 15px;
+        padding: 15px;
+    }
+
+    input[type="checkbox"]:hover {
+        background-color: var(--tertiary-color);
+    }
+}
+
+
+
+* {
+    text-align: center;
+}
+
+.formassg fieldset {
+    background-color: var(--background-color);
+    /* margin: 0 auto; */
+    border: 1px;
+    /* padding: .5rem 2%; */
+
+}
+
+/* .formassg legend {
+    position: absolute;
+    color: var(--secondary-color);
+    margin: auto;
+    padding-right: 4rem;
+    padding: 0%;
+    left: 45%;
+    top: 50%;
+} */
+
+
+.formassg label {
+    display: block;
+}
+
+body {}
+
+header {
+    display: flex;
+    height: 100px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    justify-content: center;
+    text-align: center;
+}
+
+header h1 {
+    font-weight: 600;
+    background-color: var(--primary-color);
+}
+
+label {
+    display: block;
+    text-align: center;
+}
+
+/* Default: Empty stars */
+#stars>label::before {
+    content: "\2606";
+    /* Empty star */
+    color: rgb(87, 78, 29);
+    /* color: lightgray; */
+}
+
+/* When a radio button is checked, fill the corresponding star and all previous ones */
+#stars input:checked~label::before {
+    content: "\2605";
+    /* Filled star */
+    color: rgb(87, 78, 29);
+    /* Make the filled stars gold */
+}
+
+/* Hover effect: Highlight stars on hover */
+#stars label:hover~label::before {
+    content: "\2605";
+    /* Filled star on hover */
+    color: rgb(87, 78, 29);
+    /* Change color of hovered stars */
+}
+
+/* Hide radio buttons */
+input[type="radio"] {
+    display: none;
+}
+
+/* Layout for stars */
+#stars {
+    display: flex;
+    flex-direction: row-reverse;
+    /* justify-content: center; */
+    margin: auto;
+    /* text-align: center; */
+    padding-bottom: 25px;
+}
+
+#stars>label {
+    width: 30px;
+    height: 30px;
+    font-size: 2rem;
+    margin-left: 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    /* Show pointer on hover */
+}
+
+
+/* Mobile styles */
+@media screen and (max-width: 800px) {
+
+    * {
+        box-sizing: border-box;
+        margin: 0px 15px;
+        padding: 0;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    body {
+        display: block;
+        text-align: left;
+    }
+
+    form {
+        margin: auto;
+    }
+
+    .formassg fieldset {
+        margin: 10px 0;
+        padding: 15px;
+        border: 1px solid;
+        text-align: center;
+        background-color: var(--background-color);
+
+    }
+
+
+
+    .formassg legend {
+        padding: 0 10px;
+        margin: 15px;
+        height: 15px;
+        background-color: var(--background-color);
+        text-align: left;
+    }
+
+    .formassg label {
+        display: block;
+        text-align: center;
+    }
+
+    .formassg select,
+    .formassg input[type="date"],
+    .formassg textarea,
+    .formassg input[type="text"],
+    .formassg input[type="submit"] {
+        background-color: var(--secondary-color);
+        color: var(--background-color);
+        font-weight: 700;
+        padding: .65rem;
+        margin-bottom: 15px;
+    }
+
+    fieldset#checkbox {
+        display: flex;
+        justify-content: center;
+    }
+
+    #checkbox-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+
+
+
+
+
+
+
+
+    fieldset #stars {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    #stars>label::before {
+        content: "\2606";
+    }
+
+    #stars input:checked~label::before {
+        content: "\2605";
+    }
+
+    input[type="radio"] {
+        display: none;
+        position: relative;
+        caret-color: rgba(0, 0, 0, 0);
+    }
+
+    #stars {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        margin: auto;
+        text-align: center;
+    }
+
+    #stars.hover {
+        color: #38091d;
+    }
+
+    #stars>label {
+        color: gold;
+        width: 30px;
+        height: 30px;
+        font-size: 2rem;
+        margin-left: 5px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        caret-color: rgba(0, 0, 0, 0);
+        /* remove blinking cursor */
+    }
+
+    footer {
+        background-color: var(--primary-color);
+    }
+}
