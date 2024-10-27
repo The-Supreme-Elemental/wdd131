@@ -1,0 +1,97 @@
+:root {
+    --primary-color: #0e7c7b;
+    --secondary-color: #17bebb;
+    --tertiary-color: #D4F4DD;
+    --background-color: #071e22;
+
+}
+
+
+
+
+header {
+    background-color: var(--primary-color);
+    padding: 1em
+}
+
+header h1,
+header h2 {
+    color: var(--tertiary-color);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Barlow";
+    color: var(--primary-color);
+
+}
+
+p,
+td {
+    font-family: "Oxanium";
+    color: var(--secondary-color);
+    font-weight: 700;
+}
+p {
+    line-height: 1.7;
+    padding: 1em;
+
+}
+
+
+
+body {
+    text-align: center;
+    padding: 4em;
+    /* background-color: var(--background-color); */
+
+}
+
+.colors {
+    width: 100%;
+    padding: 10px;
+
+}
+
+.colors th {
+    background-color: #999;
+    color: var(--background-color);
+    font-family: "Barlow";
+}
+
+.colors td {
+    width: 25%;
+    height: 3em;
+    font-weight: 700;
+
+}
+
+.primary {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}
+
+.secondary {
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+
+
+}
+
+.tertiary {
+    background-color: var(--tertiary-color);
+    color: var(--background-color);
+
+}
+
+.background {
+    background-color: var(--background-color);
+
+}
+
+.oxanium {
+    font-family: "Oxanium";
+
+}
