@@ -39,6 +39,11 @@ p {
     padding: 1em;
 
 }
+hr {
+    height: 3px;
+    margin: 35px 0;
+    background: var(--background-color);
+  }
 
 
 
