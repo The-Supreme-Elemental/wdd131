@@ -56,16 +56,27 @@ nav {
 
 nav a {
     display: block;
-
+    /* margin: 15px; */
+    padding: 1rem;
+    padding-top: 1rem;
+    text-decoration: none;
+    
 }
+
+
+
+nav li {
+    display: none;
+    /* transition: 0.5s; */
+    /* padding: 15px; */
+}
+
 
 nav ul {
     list-style-type: none;
+    padding: 0;
 }
 
-nav a {
-    text-decoration: none;
-}
 
 #menu {
     display: flex;
@@ -84,18 +95,18 @@ nav a {
 #menu::before {
     content: "≡";
     position: absolute;
-    right: 5px;
+    right: 15px;
     top: 0px;
     font-size: 50px;
 
 }
 
 #menu.show::before {
-    content: "░";
+    content: "×";
     position: absolute;
-    right: 15px;
-    top: 0px;
-    font-size: 40px;
+    right: 20px;
+    top: 10px;
+    font-size: 30px;
 
 }
 
@@ -108,6 +119,10 @@ nav a {
 footer {
     text-align: center;
     background-color: var(--primary-color);
+    padding: 5px;
+}
+footer h3 {
+    color: var(--tertiary-color);
 }
 
 
@@ -137,38 +152,19 @@ main {
     height: 200px;
 }
 
-@media only screen and (min-width: 700px) {
-    header {
-        display: flex;
-        justify-content: space-between;
-        /* text-align: center; */
-
-    }
-
-    nav {
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    nav ul {
-        display: flex;
-        list-style-type: none;
-        justify-content: center;
-    }
-
-    /* nav li {
-        text-decoration: none;
-    } */
-
-    #menu {
-        display: none;
-    }
-
-}
-
 
 
 /* ------------------soloplay.html styles------------------ */
+
+#info,
+#pokemon-info {
+    display: block;
+    margin: 2em;
+}
+
+#info p {}
+
+.info-grid {}
 
 
 /* ------------------multiplayer.html styles------------------ */
@@ -179,3 +175,77 @@ main {
 
 
 /* ------------------helpful-form.html styles------------------ */
+
+@media only screen and (min-width: 700px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    /* #menu {
+        margin: 0;
+        position: relative;
+        display: block;
+        width: 100px;
+    } */
+
+    nav {
+        display: flex;
+        margin: 0 auto;
+        padding-right: 100px; 
+        /* ^^^^^ This pushes the nav over to the center */
+    }
+
+    nav ul {
+        display: flex;
+        list-style-type: none;
+        width: 100%;
+        padding: 0;
+    }
+
+    nav li {
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+        height: 100%;
+        transition: 0.75s;
+    }
+    nav li:hover {
+        background-color: var(--secondary-color);
+        height: 100%;
+        
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #info {
+        display: block;
+        margin: 1em;
+    }
+
+    #info p {}
+
+    #pokemon-info {
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .info-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* Creates 2 equal-width columns */
+        grid-template-rows: repeat(4, minmax(100px, auto));
+        /* Creates 4 rows, each with a minimum height of 100px */
+        gap: 10px;
+        /* Optional: Adds spacing between grid items */
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+
+}
