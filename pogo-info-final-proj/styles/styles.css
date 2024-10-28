@@ -5,3 +5,171 @@
     --background-color: #071e22;
 
 }
+
+/* ------------------global styles------------------ */
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Barlow";
+    color: var(--secondary-color);
+}
+
+p,
+a {
+    font-family: "Oxanium";
+    color: var(--tertiary-color);
+}
+
+
+body {
+    background-color: var(--background-color);
+    font-family: "";
+    padding: 0;
+    margin: 0 auto;
+}
+
+/* heading styles */
+header {
+    display: block;
+    background-color: var(--primary-color);
+}
+
+#home {
+    display: flex;
+    justify-content: ;
+    text-align: left;
+    align-items: center;
+    padding: 15px 5px;
+    width: 150px;
+}
+#home img {
+    width: 150px;
+
+}
+
+nav {
+    text-align: center;
+}
+
+nav a {
+    display: block;
+
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+}
+#menu {
+    display: flex;
+    justify-content: right;
+}
+
+#menu {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--tertiary-color);
+    background-color: chartreuse;
+}
+
+#menu::before {
+    content: "≡";
+    position: absolute;
+    right: 5px;
+    top: 0px;
+    font-size: 50px;
+    
+}
+
+#menu.show::before {
+    content: "░";
+    position: absolute;
+    right: 15px;
+    top: 0px;
+    font-size: 40px;
+
+}
+
+.show li {
+    display: block;
+}
+
+
+/* footer styles */
+footer {
+    text-align: center;
+    background-color: var(--primary-color);
+}
+
+
+/* ------------------index.html styles------------------ */
+
+
+/* main styles */
+main {
+    /* display: flex; */
+    text-align: center;
+
+}
+
+.hero {
+    display: block;
+    text-align: center;
+}
+.hero p{
+    width: 75%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 30px;
+}
+.hero img{
+    height: 200px;
+}
+
+@media only screen and (min-width: 700px) {
+    header  {
+        display: flex;
+        justify-content: space-between;
+
+    }
+    nav {
+        flex-direction:row-reverse;
+        justify-content: center;
+    }
+
+    nav ul {
+        display: flex;
+        list-style-type: none;
+        justify-content: center;
+    }
+
+    /* nav li {
+        text-decoration: none;
+    } */
+
+    #menu {
+        display: none;
+    }
+
+}
+
+
+
+/* ------------------soloplay.html styles------------------ */
+
+
+/* ------------------multiplayer.html styles------------------ */
+
+
+
+/* ------------------faqs.html styles------------------ */
+
+
+/* ------------------helpful-form.html styles------------------ */
