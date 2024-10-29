@@ -21,6 +21,9 @@ a {
     font-family: "Oxanium";
     color: var(--tertiary-color);
 }
+p {
+    line-height: 2em;
+}
 
 
 body {
@@ -112,6 +115,7 @@ nav ul {
 
 .show li {
     display: block;
+    transition: 0.5s;
 }
 
 
@@ -164,7 +168,11 @@ main {
 
 #info p {}
 
-.info-grid {}
+#info img {
+    width: 200px;
+    ;
+}
+
 
 
 /* ------------------multiplayer.html styles------------------ */
