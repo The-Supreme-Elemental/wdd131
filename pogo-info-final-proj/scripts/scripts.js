@@ -20,25 +20,29 @@ function displayTime() {
 displayTime();
 
 const faqs = [
-    {
+    {   // Pokemon Ivs
         question: "What are IVs?",
         answer: "IVs, or Individual Values, measure a Pokemon's Attack, Defense, and HP stats. They are randomized for each Pokemon, but if multiple Trainers catch the same Pokemon in the same place, its IVs will be the same for each trainer. IVs affect a Pokemon's CP, and higher CP is always better. This subsequently means that higher IVs are usually recommended. When a Pokemon has maxed out IVs, they are referred to as 4*, hundos, or perfects. These Pokemon do not occur very often, and are sought after by all Trainers.",
     },
-    {
+    {   // CP of a Pokemon 
         question: "What is a Pokemon's CP?",
         answer: "A Pokemon's CP, or Combat Power, is a sum of its IVs, its base stats (different from IVs), and its power up level. The higher a CP, the more powerful, usually, the Pokemon is. How high a Pokemon's CP is also factors in how much damage a Pokemon can deal, and how much damage it can take. For example. a 1500cp Annihilape will take more damage and deal less damage than a 2500cp Annihilape."
     },
-    {
+    {   // Mega Pokemon
         question: "What are Mega Pokemon?",
         answer: "Mega Pokemon are a select lot of Pokemon that have a more powerful form that the can evolve into. Trainers can participate in Mega Raids for energy that, once enough is obtained, can be used to Mega Evolve your Pokemon!",
     },
-    {
+    {   // What are hundos
         question: "I'm playing with my friends, and they keep talking about \"hundos\" and \"perfects\". What are those?",
         answer: "Pokemon referred to as \"hundos\" or \"perfects\" are Pokemon with maxed out IVs, with each one being at 15. ",
     },
-    {
+    {   // Throwing circle 
         question: "What is the circle on my screen when I'm throwing? What do the colors mean?",
         answer: "The circle on the screen holds the Pokemons hitbox, which you should aim for when throwing. The colors on the circle can range from bright green to deep red. This represents the level of difficulty you will face when catching the Pokemon, with bright green being very easy, yellow meaning slightly more difficult, orange meaning difficult, and red meaning hard.",
+    },
+    {
+        question: "What are Nice Throws, Great Throws, and Excellent Throws?",
+        answer: "Nice, Great, and Excellent Throws are all based off of the circle that is seen when throwing a Pokeball. You will see a circle decreasing in size the longer the Pokeball is charging up. Throwing the Pokeball so that it hits on the inside of the circle will result in one of these throws. Nice throws are the easiest, and can be hit on the largest circle. Great throws require a smaller circle and are more difficult, and Excellent Throws are the hardest to hit, requiring a very small circle. Each of these throws give your catch increased XP, with Nice throws giving +20xp, Great throws giving +100xp, and Excellent throws giving +1000xp. ",
     },
     {
         question: "What is the optimal way to throw a PokeBall?",
@@ -50,7 +54,7 @@ const faqs = [
     },
     {
         question: "What is Field Research, and is it important?",
-        answer: "Field research tasks are things that are obtained when spinning stops. Normally Trainers are limited to 1 scan task and 3 gameplay tasks. "
+        answer: "Field research tasks are things that are obtained when spinning stops. Normally Trainers are limited to 1 scan task and 3 gameplay tasks. Scanning tasks require you to scan a nearby Pokestop for about 30 seconds. You are required to move around the Pokestop, and there needs to be sufficient light for the camera to pick up your surroundings. Rewards for these scan tasks can me 10 Pokeballs, 5 Great Balls, or 1 Poffin. Gameplay tasks are a little more flexible, ranging from winning 1 raid, catching 15 pokemon of a certain type, or making 5 Great Throws. The rewards from these are also more varied, ranging from Pokeballs, Mega Energy, or encounters with various Pokemon. Pokemon from these encounters will have boosted IVs, giving a greater chance for perfect Pokemon. "
     }
 ]
 
