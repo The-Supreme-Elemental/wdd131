@@ -380,6 +380,13 @@ input[type="radio"] {
         display: none;
     }
 
+    footer h3{
+        color: white;
+    }
+    footer {
+        color: white;
+    }
+
 
 
     /* ------------------soloplay.html styles------------------ */
