@@ -43,7 +43,6 @@ header {
 
 #home {
     display: flex;
-    /* justify-content: ; */
     text-align: left;
     align-items: center;
     padding: 15px 5px;
@@ -344,12 +343,6 @@ input[type="radio"] {
 
     }
 
-    /* #menu {
-        margin: 0;
-        position: relative;
-        display: block;
-        width: 100px;
-    } */
 
     nav {
         display: flex;
@@ -392,8 +385,6 @@ input[type="radio"] {
         display: block;
         margin: 1em;
     }
-
-    #info p {}
 
     #pokemon-info {
         max-width: 1200px;
