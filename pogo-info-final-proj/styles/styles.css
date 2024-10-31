@@ -209,6 +209,17 @@ fieldset {
     padding-bottom: 20px;
 }
 
+#stars {
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+}
+
+#stars label {
+    padding: 0;
+    margin: 0;
+}
+
 label {
     display: block;
     text-align: center;
@@ -226,9 +237,14 @@ input {
 input[type="date"] {
     font-size: 14px;
 }
+
 input[type="submit"] {
     width: 150px;
     height: 30px;
+}
+input[type="submit"]:active {
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
 }
 
 
@@ -253,6 +269,7 @@ fieldset #stars {
     justify-content: center;
     align-items: center;
 }
+
 
 
 #stars>label::before {
@@ -283,7 +300,7 @@ input[type="radio"] {
 
 #stars>label {
     color: var(--secondary-color);
-    width: 30px;
+    width: 40px;
     height: 30px;
     font-size: 2rem;
     margin-left: 5px;
@@ -406,7 +423,10 @@ input[type="radio"] {
         justify-content: center;
         margin: auto;
         text-align: center;
+        margin-top: 50px;
+        margin-bottom: 20px;
     }
+
 
     #stars.hover {
         color: #38091d;
@@ -414,15 +434,16 @@ input[type="radio"] {
 
     #stars>label {
         color: var(--secondary-color);
-        width: 30px;
-        height: 30px;
-        font-size: 2rem;
+        width: 40px;
+        height: 10px;
+        font-size: 2.5rem;
         margin-left: 5px;
         text-align: center;
         display: flex;
         align-items: center;
         caret-color: rgba(0, 0, 0, 0);
-        /* remove blinking cursor */
+        padding-top: 0px;
+
     }
 
 

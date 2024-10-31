@@ -56,34 +56,35 @@
         </div>
 
         <div class="newsletter-form">
-            <form method="get" action="thanks.html" class="discord-form">
+            <form method="get" action="thanks.html" target="_blank" class="discord-form">
                 <h2>Join our Pokemon Go Discord!</h2>
 
                 <fieldset>
                     <legend>Username</legend>
-                    <label><input type="text" id="username" required></label>
+                    <label for="username"><input type="text" id="username" name="username" required></label>
                 </fieldset>
 
                 <fieldset>
                     <legend>Birthdate</legend>
-                    <label><input type="date" id="birthdate" required></label>
+                    <label for="birthdate"><input type="date" id="birthdate" name="birthdate" required></label>
 
                 </fieldset>
 
                 <fieldset>
                     <legend>Email</legend>
-                    <label><input type="text" id="email" required></label>
+                    <label for="email"><input type="email" id="email" name="email" required></label>
 
                 </fieldset>
 
                 <fieldset>
                     <legend>Phone Number</legend>
-                    <label><input type="text" id="phone-number" required></label>
+                    <label for="phone-number"><input type="tel" id="phone-number" name="phone-number"
+                            pattern="\d{3}-\d{3}-\d{4}" placeholder="123-456-7890" required></label>
 
                 </fieldset>
 
                 <fieldset>
-                    <label><input type="submit" value="Sign Up"></label>
+                    <input type="submit" value="Sign Up">
                 </fieldset>
 
 
@@ -105,7 +106,7 @@
                     <label for="star-1"></label>
                 </fieldset>
 
-                
+
             </form>
         </div>
 
