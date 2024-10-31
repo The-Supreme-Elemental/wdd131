@@ -128,11 +128,12 @@ footer {
 }
 
 footer h3 {
-    color: var(white);
+    color: var(--tertiary-color);
 
 }
-footer p{
-    color: white;
+
+footer p {
+    color: var(--tertiary-color);
 }
 
 
@@ -184,9 +185,9 @@ main {
 /* ------------------battles.html styles------------------ */
 
 .battles-content {
-max-width: 575px;
-margin: 0 auto;
-padding: 2rem;
+    max-width: 575px;
+    margin: 0 auto;
+    padding: 2rem;
 }
 
 
@@ -376,13 +377,19 @@ input[type="radio"] {
 
     }
 
+    nav a,
+    footer p {
+        font-size: 20px;
+    }
+
     #menu {
         display: none;
     }
 
-    footer h3{
+    footer h3 {
         color: white;
     }
+
     footer {
         color: white;
     }
@@ -417,9 +424,9 @@ input[type="radio"] {
     }
 
     /* ------------------battles.html styles------------------ */
-.battles-content {
-    max-width: 1200px;
-}
+    .battles-content {
+        max-width: 1200px;
+    }
 
 
     /* ------------------helpful-form.html styles------------------ */
