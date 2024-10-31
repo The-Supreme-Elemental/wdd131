@@ -32,10 +32,14 @@
         <a id="menu" href="#"></a>
     </header>
     <main>
-        <h2>Helpful Links</h2>
-        <h3>Here you will find multiple links to help you on your Pokemon Go journey. Included are a few of the top Pokemon Go subreddits, a couple sites guaranteed to help with PVP and raids, and a few top YouTube channels for Pokemon Go Content! Enjoy!</h3>
 
         <div class="link-container">
+            <h2>Helpful Links</h2>
+            <h3>Here you will find multiple links to help you on your Pokemon Go journey. Included are a few of the top
+                Pokemon Go subreddits, a couple sites guaranteed to help with PVP and raids, and a few top YouTube
+                channels
+                for Pokemon Go Content! Enjoy!</h3>
+
             <ul><a href="https://www.reddit.com/r/pokemongo/">Pokemon Go's No1 Subreddit</a></ul>
             <ul><a href="https://www.reddit.com/r/TheSilphRoad/">Pokémon GO's Largest Grassroots Network: The Silph
                     Road</a></ul>
@@ -44,14 +48,65 @@
             </ul>
             <ul><a href="https://pvpoke.com/">Open Source Battle Simulator, Rankings & Team Building for Pokemon Go
                     PVP</a></ul>
-            <ul><a href="https://pogo.gamepress.gg/pokemon-go-type-chart">Pokemon Go Type Effectiveness Chart</a></ul>
+            <ul><a href="https://pogo.gamepress.gg/pokemon-go-type-chart">Pokemon Go Type Effectiveness Chart</a>
+            </ul>
             <ul><a href="https://www.youtube.com/@MYSTlC7">MYSTIC7's Pokemon Go Youtube Channel</a></ul>
             <ul><a href="https://www.youtube.com/c/Pok%C3%A9Daxi">Poke Daxi's Pokemon Go Youtube Channel</a></ul>
             <ul><a href="https://www.youtube.com/@JTGily">JTGily's Pokemon Go Youtube Channel</a></ul>
         </div>
 
         <div class="newsletter-form">
-            
+            <form method="get" action="thanks.html" class="discord-form">
+                <h2>Join our Pokemon Go Discord!</h2>
+
+                <fieldset>
+                    <legend>Username</legend>
+                    <label><input type="text" id="username" required></label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Birthdate</legend>
+                    <label><input type="date" id="birthdate" required></label>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Email</legend>
+                    <label><input type="text" id="email" required></label>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Phone Number</legend>
+                    <label><input type="text" id="phone-number" required></label>
+
+                </fieldset>
+
+                <fieldset>
+                    <label><input type="submit" value="Sign Up"></label>
+                </fieldset>
+
+
+                <fieldset id="stars">
+                    <legend>How would you rate this website?</legend>
+                    <input type="radio" name="stars" id="star-5" value="5" required>
+                    <label for="star-5"></label>
+
+                    <input type="radio" name="stars" id="star-4" value="4" required>
+                    <label for="star-4"></label>
+
+                    <input type="radio" name="stars" id="star-3" value="3" required>
+                    <label for="star-3"></label>
+
+                    <input type="radio" name="stars" id="star-2" value="2" required>
+                    <label for="star-2"></label>
+
+                    <input type="radio" name="stars" id="star-1" value="1" required>
+                    <label for="star-1"></label>
+                </fieldset>
+
+                
+            </form>
         </div>
 
 

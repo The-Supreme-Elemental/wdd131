@@ -17,7 +17,8 @@ h4 {
 }
 
 p,
-a {
+a,
+legend {
     font-family: "Oxanium";
     color: var(--tertiary-color);
 }
@@ -190,15 +191,117 @@ main {
     display: none;
 }
 
-.faq.show
-.answer {
+.faq.show .answer {
     display: block;
 }
 
 
 /* ------------------helpful-form.html styles------------------ */
+.link-container {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+
+
+fieldset {
+    border: none;
+    padding-bottom: 20px;
+}
+
+label {
+    display: block;
+    text-align: center;
+}
+
+
+input {
+    background-color: var(--tertiary-color);
+    width: 170px;
+    height: 40px;
+    font-size: 16px;
+    text-align: center;
+}
+
+input[type="date"] {
+    font-size: 14px;
+}
+input[type="submit"] {
+    width: 150px;
+    height: 30px;
+}
+
+
+/* Default: Empty stars */
+#stars>label::before {
+    content: "\2606";
+    /* Empty star */
+    color: var(--secondary-color)
+        /* color: lightgray; */
+}
+
+/* When a radio button is checked, fill the corresponding star and all previous ones */
+#stars input:checked~label::before {
+    content: "\2605";
+    /* Filled star */
+    color: var(--secondary-color);
+    /* Make the filled stars gold */
+}
+
+fieldset #stars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#stars>label::before {
+    content: "\2606";
+}
+
+#stars input:checked~label::before {
+    content: "\2605";
+}
+
+input[type="radio"] {
+    display: none;
+    position: relative;
+    caret-color: rgba(0, 0, 0, 0);
+}
+
+#stars {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+}
+
+#stars.hover {
+    color: #38091d;
+}
+
+#stars>label {
+    color: var(--secondary-color);
+    width: 30px;
+    height: 30px;
+    font-size: 2rem;
+    margin-left: 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    caret-color: rgba(0, 0, 0, 0);
+    /* remove blinking cursor */
+}
+
+
+
+
+/* Media Query for Big Screens */
 
 @media only screen and (min-width: 700px) {
+
+    /* ------------------global styles------------------ */
     header {
         display: flex;
         justify-content: space-between;
@@ -244,6 +347,9 @@ main {
         display: none;
     }
 
+    /* ------------------soloplay.html styles------------------ */
+
+
     #info {
         display: block;
         margin: 1em;
@@ -268,6 +374,55 @@ main {
         width: 100%;
         max-width: 1200px;
         margin: 0 auto;
+    }
+
+    /* ------------------helpful-form.html styles------------------ */
+
+
+    fieldset #stars {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    #stars>label::before {
+        content: "\2606";
+    }
+
+    #stars input:checked~label::before {
+        content: "\2605";
+    }
+
+    input[type="radio"] {
+        display: none;
+        position: relative;
+        caret-color: rgba(0, 0, 0, 0);
+    }
+
+    #stars {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        margin: auto;
+        text-align: center;
+    }
+
+    #stars.hover {
+        color: #38091d;
+    }
+
+    #stars>label {
+        color: var(--secondary-color);
+        width: 30px;
+        height: 30px;
+        font-size: 2rem;
+        margin-left: 5px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        caret-color: rgba(0, 0, 0, 0);
+        /* remove blinking cursor */
     }
 
 
