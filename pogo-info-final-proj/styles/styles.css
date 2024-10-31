@@ -125,7 +125,7 @@ nav ul {
 footer {
     text-align: center;
     background-color: var(--primary-color);
-    padding: 5px;
+    padding: 15px;
 }
 
 footer h3 {
@@ -180,11 +180,16 @@ main {
 
 /* ------------------battles.html styles------------------ */
 
+.battles-content {
+max-width: 575px;
+margin: 0 auto;
+padding: 2rem;
+}
 
 
 /* ------------------faqs.html styles------------------ */
 .faq-container {
-    max-width: 1200px;
+    max-width: 600px;
     margin: 0 auto;
     padding: 2rem;
 }
@@ -200,8 +205,16 @@ main {
 
 /* ------------------helpful-form.html styles------------------ */
 .link-container {
-    max-width: 750px;
-    margin: 0 auto;
+    padding: 2rem;
+}
+
+.link-container ul {
+    text-align: center;
+    padding: 0;
+}
+
+.newsletter-form {
+    padding: 2rem;
 }
 
 
@@ -370,6 +383,8 @@ input[type="radio"] {
         display: none;
     }
 
+
+
     /* ------------------soloplay.html styles------------------ */
 
 
@@ -400,9 +415,27 @@ input[type="radio"] {
     }
 
     /* ------------------battles.html styles------------------ */
+.battles-content {
+    max-width: 1200px;
+}
 
 
     /* ------------------helpful-form.html styles------------------ */
+
+    .link-container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .link-container ul {
+        text-align: center;
+        padding: 0;
+    }
+
+    .newsletter-form {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
 
 
     fieldset #stars {
