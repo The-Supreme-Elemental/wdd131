@@ -55,6 +55,10 @@ const faqs = [
     {
         question: "What is Field Research, and is it important?",
         answer: "Field research tasks are things that are obtained when spinning stops. Normally Trainers are limited to 1 scan task and 3 gameplay tasks. Scanning tasks require you to scan a nearby Pokestop for about 30 seconds. You are required to move around the Pokestop, and there needs to be sufficient light for the camera to pick up your surroundings. Rewards for these scan tasks can me 10 Pokeballs, 5 Great Balls, or 1 Poffin. Gameplay tasks are a little more flexible, ranging from winning 1 raid, catching 15 pokemon of a certain type, or making 5 Great Throws. The rewards from these are also more varied, ranging from Pokeballs, Mega Energy, or encounters with various Pokemon. Pokemon from these encounters will have boosted IVs, giving a greater chance for perfect Pokemon. "
+    },
+    {
+        question: "What is the meta?",
+        answer: "The meta is the colloquial term for Pokemon that are top in their class for Raids and PVP. There are several resources that outline what the meta is, so feel free to check those out!"
     }
 ]
 
