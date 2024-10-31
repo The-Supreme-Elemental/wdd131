@@ -183,15 +183,17 @@ main {
 
 
 /* ------------------faqs.html styles------------------ */
-/* .question {
-    display: none;
+.faq-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
 
-} */
 .answer {
     display: none;
 }
 
-.faq.show .answer {
+.show .answer {
     display: block;
 }
 
@@ -242,6 +244,7 @@ input[type="submit"] {
     width: 150px;
     height: 30px;
 }
+
 input[type="submit"]:active {
     background-color: var(--primary-color);
     color: var(--tertiary-color);
@@ -307,11 +310,14 @@ input[type="radio"] {
     text-align: center;
     display: flex;
     align-items: center;
-    caret-color: rgba(0, 0, 0, 0);
-    /* remove blinking cursor */
+    caret-color: rgba(175, 22, 22, 0);
 }
 
-
+/* ------------------thanks.html styles------------------ */
+.thanks-link {
+    display: block;
+    margin: 100px;
+}
 
 
 /* Media Query for Big Screens */

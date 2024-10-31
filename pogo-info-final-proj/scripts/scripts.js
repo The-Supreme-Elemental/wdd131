@@ -75,24 +75,37 @@ function displayFAQs(faqs) {
         answer.classList.add("answer");
         answer.textContent = faq.answer;
 
-        
+
         faqItem.appendChild(question);
         faqItem.appendChild(answer);
         faqContainer.appendChild(faqItem);
-        
+
         question.addEventListener("click", () => {
             faqItem.classList.toggle("show");
 
-            
+
         });
-        
-        
-        
-
-    })
 
 
+
+
+    });
+
+
+};
+
+function filterFAQs() {
+    const searchInput = document.getElementById("search").value.toLowerCase();
+    const filteredFAQs = faqs.filter(faq => {
+        return (
+            faq.question.toLowerCase().includes(searchInput) ||
+            faq.answer.toLowerCase().includes(searchInput)
+        );
+    });
+    displayFAQs(filteredFAQs);
 }
+
+document.getElementById("search").addEventListener("input", filterFAQs);
 
 
 displayFAQs(faqs);
