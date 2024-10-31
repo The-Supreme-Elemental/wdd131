@@ -60,34 +60,42 @@
 
     #stars {
         display: flex;
-        flex-direction: row-reverse; /* Change to row to align stars from left to right */
-        justify-content: flex-end; /* Aligns the stars to the left */
+        flex-direction: row-reverse;
+        /* Change to row to align stars from left to right */
+        justify-content: flex-end;
+        /* Aligns the stars to the left */
         /* You can remove the margin: auto or text-align here */
     }
-    
+
     #stars>label::before {
-        content: "\2606"; /* Empty star (★) */
+        content: "\2606";
+        /* Empty star (★) */
     }
-    
+
     #stars input:checked~label::before {
-        content: "\2605"; /* Filled star (☆) when checked */
+        content: "\2605";
+        /* Filled star (☆) when checked */
     }
-    
+
     #stars label {
         color: gold;
         width: 30px;
         height: 30px;
         font-size: 2rem;
-        margin-right: 5px; /* Add space between stars if needed */
+        margin-right: 5px;
+        /* Add space between stars if needed */
         display: flex;
-        align-items: center; /* Center stars vertically */
-        text-align: center; /* Center stars inside the label */
+        align-items: center;
+        /* Center stars vertically */
+        text-align: center;
+        /* Center stars inside the label */
     }
-    
+
     #stars input[type="radio"] {
-        display: none; /* Hide the radio inputs */
+        display: none;
+        /* Hide the radio inputs */
     }
-    
+
 
     footer {
         background-color: var(--primary-color)
@@ -102,6 +110,12 @@
 
     input[type="checkbox"]:hover {
         background-color: var(--tertiary-color);
+    }
+
+    .visits-container P {
+        color: var(--background-color);
+        font-weight: bolder;
+        font-size: larger;
     }
 }
 
