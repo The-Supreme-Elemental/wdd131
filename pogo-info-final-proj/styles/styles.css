@@ -178,7 +178,7 @@ main {
 
 
 
-/* ------------------multiplayer.html styles------------------ */
+/* ------------------battles.html styles------------------ */
 
 
 
@@ -398,6 +398,9 @@ input[type="radio"] {
         max-width: 1200px;
         margin: 0 auto;
     }
+
+    /* ------------------battles.html styles------------------ */
+
 
     /* ------------------helpful-form.html styles------------------ */
 
