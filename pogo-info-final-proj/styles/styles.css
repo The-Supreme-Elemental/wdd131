@@ -67,8 +67,6 @@ nav a {
 
 }
 
-
-
 nav li {
     display: none;
     /* transition: 0.5s; */
@@ -118,6 +116,7 @@ nav ul {
     display: block;
     transition: 0.5s;
 }
+
 
 
 /* footer styles */
@@ -392,6 +391,29 @@ input[type="radio"] {
     footer {
         color: white;
     }
+
+    button {
+        background-color: var(--background-color);
+        height: 40px;
+        padding: 0 25px;
+        margin: 0 20px;
+        border: none;
+        color: var(--tertiary-color);
+    }
+    #button {
+        display: flex;
+        align-items: center;
+
+    }
+
+    header.light {
+        background-color: var(--tertiary-color);
+    }
+    body.light {
+        background-color: var(--secondary-color);
+    }
+
+
 
 
 

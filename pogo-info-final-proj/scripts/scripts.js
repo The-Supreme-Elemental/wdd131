@@ -113,3 +113,30 @@ document.getElementById("search").addEventListener("input", filterFAQs);
 
 
 displayFAQs(faqs);
+
+// ~~~~~~~~~~~~~~~~~~~~Dark Theme ~~~~~~~~~~~~~~~~~~~~~ //
+function applyTheme() {
+    const lightMode = localStorage.getItem("lightMode") === "true";
+    const body = document.body;
+    const header = document.querySelector("header");
+
+    if (lightMode) {
+        body.classList.add("light");
+        header.classList.add("light");
+    } else {
+        body.classList.remove("light");
+        header.classList.remove("light");
+    }
+}
+
+
+function toggleMode() {
+    const lightMode = localStorage.getItem("lightMode") === "true";
+    localStorage.setItem("lightMode", !lightMode);
+    applyTheme();
+}
+
+document.getElementById("modeToggle").addEventListener("click", toggleMode);
+
+
+applyTheme();
