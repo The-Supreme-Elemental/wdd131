@@ -1,12 +1,12 @@
 function hamburgerMenu() {
     const mainnav = document.querySelector("nav")
     const hambutton = document.querySelector("#menu");
-    
+
     hambutton.addEventListener("click", () => {
         mainnav.classList.toggle("show");
         hambutton.classList.toggle("show");
     });
-    
+
 }
 hamburgerMenu();
 // ~~~~~~~~~~~~~~~~~~~~Dark Theme ~~~~~~~~~~~~~~~~~~~~~ //
@@ -15,28 +15,29 @@ function applyTheme() {
     const body = document.body;
     const header = document.querySelector("header");
     const button = document.getElementById("modeToggle");
+    
 
     if (lightMode) {
         body.classList.add("light");
         header.classList.add("light");
-        document.querySelectorAll("p, a, legend, li, footer, button").forEach(h => h.classList.add("light")); // Remove light class from headings
+        document.querySelectorAll("p, a, legend, li, footer, button, label, #menu").forEach(h => h.classList.add("light")); // Remove light class from headings
         document.querySelectorAll("h1, h2, h3, h4").forEach(h => h.classList.add("light"));
-        button.textContent = "Switch to Dark Mode"; // Update button text
+        button.textContent = "Dark Mode"; // Update button text
     } else {
         body.classList.remove("light");
         header.classList.remove("light");
-        document.querySelectorAll("p, a, legend, li, footer, button").forEach(h => h.classList.remove("light")); // Remove light class from headings
+        document.querySelectorAll("p, a, legend, li, footer, button, label, #menu").forEach(h => h.classList.remove("light")); // Remove light class from headings
         document.querySelectorAll("h1, h2, h3, h4").forEach(h => h.classList.remove("light")); // Remove light class from headings
-        button.textContent = "Switch to Light Mode"; // Update button text
+        button.textContent = "Light Mode"; // Update button text
     }
 }
+
 
 function toggleMode() {
     const lightMode = localStorage.getItem("lightMode") === "true";
     localStorage.setItem("lightMode", !lightMode);
     applyTheme();
 }
-
 document.getElementById("modeToggle").addEventListener("click", toggleMode);
 
 // Apply the theme on page load
