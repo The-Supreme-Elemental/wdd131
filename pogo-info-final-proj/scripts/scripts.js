@@ -19,10 +19,14 @@ function applyTheme() {
     if (lightMode) {
         body.classList.add("light");
         header.classList.add("light");
+        document.querySelectorAll("p, a, legend, li, footer, button").forEach(h => h.classList.add("light")); // Remove light class from headings
+        document.querySelectorAll("h1, h2, h3, h4").forEach(h => h.classList.add("light"));
         button.textContent = "Switch to Dark Mode"; // Update button text
     } else {
         body.classList.remove("light");
         header.classList.remove("light");
+        document.querySelectorAll("p, a, legend, li, footer, button").forEach(h => h.classList.remove("light")); // Remove light class from headings
+        document.querySelectorAll("h1, h2, h3, h4").forEach(h => h.classList.remove("light")); // Remove light class from headings
         button.textContent = "Switch to Light Mode"; // Update button text
     }
 }

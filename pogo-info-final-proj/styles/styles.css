@@ -16,12 +16,14 @@ h4 {
     color: var(--secondary-color);
 }
 
+
 p,
 a,
 legend {
     font-family: "Oxanium";
     color: var(--tertiary-color);
 }
+
 
 p {
     line-height: 2em;
@@ -117,12 +119,36 @@ nav ul {
     transition: 0.5s;
 }
 
-header.light {
+/* ~~~~~~~~~~~~~~~~~Light Theme Styles ~~~~~~~~~~~~~~~~~~~~ */
+
+header.light,
+footer.light {
     background-color: var(--tertiary-color);
 }
+
 body.light {
     background-color: var(--secondary-color);
 }
+
+button.light {
+    background-color: var(--primary-color);
+}
+
+h1.light,
+h2.light,
+h3.light,
+h4.light {
+    font-family: "Barlow";
+    color: var(--background-color);
+}
+
+p.light,
+a.light,
+legend {
+    font-family: "Oxanium";
+    color: var(--background-color);
+}
+
 
 
 
@@ -407,6 +433,7 @@ input[type="radio"] {
         border: none;
         color: var(--tertiary-color);
     }
+
     #button {
         display: flex;
         align-items: center;
@@ -416,6 +443,7 @@ input[type="radio"] {
     header.light {
         background-color: var(--tertiary-color);
     }
+
     body.light {
         background-color: var(--secondary-color);
     }
