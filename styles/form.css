@@ -3,7 +3,8 @@
     --secondary-color: #38091d;
     --tertiary-color: #156064;
     --background-color: #ccc;
-    --background-color-2: rgb(87, 78, 29) font-family: "Titillium Web", sans-serif;
+    --background-color-2: rgb(87, 78, 29);
+    font-family: "Titillium Web", sans-serif;
     background-color: var(--tertiary-color);
 
 }
