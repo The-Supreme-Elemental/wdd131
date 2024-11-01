@@ -1,14 +1,42 @@
 function hamburgerMenu() {
     const mainnav = document.querySelector("nav")
     const hambutton = document.querySelector("#menu");
-
+    
     hambutton.addEventListener("click", () => {
         mainnav.classList.toggle("show");
         hambutton.classList.toggle("show");
     });
-
+    
 }
 hamburgerMenu();
+// ~~~~~~~~~~~~~~~~~~~~Dark Theme ~~~~~~~~~~~~~~~~~~~~~ //
+function applyTheme() {
+    const lightMode = localStorage.getItem("lightMode") === "true";
+    const body = document.body;
+    const header = document.querySelector("header");
+    const button = document.getElementById("modeToggle");
+
+    if (lightMode) {
+        body.classList.add("light");
+        header.classList.add("light");
+        button.textContent = "Switch to Dark Mode"; // Update button text
+    } else {
+        body.classList.remove("light");
+        header.classList.remove("light");
+        button.textContent = "Switch to Light Mode"; // Update button text
+    }
+}
+
+function toggleMode() {
+    const lightMode = localStorage.getItem("lightMode") === "true";
+    localStorage.setItem("lightMode", !lightMode);
+    applyTheme();
+}
+
+document.getElementById("modeToggle").addEventListener("click", toggleMode);
+
+// Apply the theme on page load
+applyTheme();
 
 function displayTime() {
     const current_year = new Date();
@@ -63,7 +91,7 @@ const faqs = [
 ]
 
 function displayFAQs(faqs) {
-    const faqContainer = document.querySelector("#faq");
+    const faqContainer = document.querySelector(".faq-container");
 
     faqContainer.innerHTML = "";
 
@@ -108,35 +136,16 @@ function filterFAQs() {
     });
     displayFAQs(filteredFAQs);
 }
+const searchInput = document.getElementById("search");
+console.log(searchInput); // This should log the element if it exists
+if (searchInput) {
+    searchInput.addEventListener("input", filterFAQs);
+} else {
+    console.log("Element with id 'search' not found");
+}
 
-document.getElementById("search").addEventListener("input", filterFAQs);
+// document.getElementById("search").addEventListener("input", filterFAQs);
 
 
 displayFAQs(faqs);
 
-// ~~~~~~~~~~~~~~~~~~~~Dark Theme ~~~~~~~~~~~~~~~~~~~~~ //
-function applyTheme() {
-    const lightMode = localStorage.getItem("lightMode") === "true";
-    const body = document.body;
-    const header = document.querySelector("header");
-
-    if (lightMode) {
-        body.classList.add("light");
-        header.classList.add("light");
-    } else {
-        body.classList.remove("light");
-        header.classList.remove("light");
-    }
-}
-
-
-function toggleMode() {
-    const lightMode = localStorage.getItem("lightMode") === "true";
-    localStorage.setItem("lightMode", !lightMode);
-    applyTheme();
-}
-
-document.getElementById("modeToggle").addEventListener("click", toggleMode);
-
-
-applyTheme();
